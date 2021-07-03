@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1919;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .flex {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+body .container .bar {
+  width: 250px;
+  height: 30px;
+  border: 1px solid white;
+  margin: 0 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+body .container .inside1 {
+  border-radius: 30px;
+  width: 90%;
+  height: 29px;
+  background: white;
+  animation: slide1 2s ease-in-out;
+}
+body .container .inside2 {
+  border-radius: 30px;
+  width: 80%;
+  height: 29px;
+  background: white;
+  animation: slide2 2s ease-in-out;
+}
+body .container .inside3 {
+  border-radius: 30px;
+  width: 55%;
+  height: 29px;
+  background: white;
+  animation: slide3 2s ease-in-out;
+}
+
+@keyframes slide1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes slide2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes slide3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
